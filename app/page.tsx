@@ -300,60 +300,6 @@ export default function Home() {
             <div className="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden group cursor-pointer reveal reveal-up reveal-delay-1 rounded-2xl shadow-xl border border-white/5 m-3 sm:m-4">
               <img
                 src="/Everything For JB Detailing/532066544_1586553572730404_3629609569813752129_n.jpg"
-                alt="Protection film on car"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-              />
-              <span className="absolute top-4 left-4 z-10 bg-blue-600 text-white text-[10px] md:text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full shadow">
-                Popular
-              </span>
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
-              <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
-                <div className="bg-black/60 backdrop-blur-sm rounded-lg px-4 py-3">
-                  <h3 className="text-base md:text-lg lg:text-xl font-extrabold tracking-wide">PROTECTION FILM</h3>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 2 */}
-            <div className="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden group cursor-pointer reveal reveal-up reveal-delay-2 rounded-2xl shadow-xl border border-white/5 m-3 sm:m-4">
-              <img
-                src="/Everything For JB Detailing/529428123_2221655194969624_2069702413708975227_n.jpg"
-                alt="Steam cleaning interior"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-              />
-              <span className="absolute top-4 left-4 z-10 bg-blue-600 text-white text-[10px] md:text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full shadow">
-                Popular
-              </span>
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
-              <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
-                <div className="bg-black/60 backdrop-blur-sm rounded-lg px-4 py-3">
-                  <h3 className="text-base md:text-lg lg:text-xl font-extrabold tracking-wide">STEAM CLEANING</h3>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 3 */}
-            <div className="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden group cursor-pointer reveal reveal-up reveal-delay-3 rounded-2xl shadow-xl border border-white/5 m-3 sm:m-4">
-              <img
-                src="/Everything For JB Detailing/528275995_792450083735589_1487331631030713673_n.jpg"
-                alt="Rims and tires washing"
-                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
-              />
-              <span className="absolute top-4 left-4 z-10 bg-blue-600 text-white text-[10px] md:text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full shadow">
-                Popular
-              </span>
-              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
-              <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
-                <div className="bg-black/60 backdrop-blur-sm rounded-lg px-4 py-3">
-                  <h3 className="text-base md:text-lg lg:text-xl font-extrabold tracking-wide">RIMS & TIRES WASHING</h3>
-                </div>
-              </div>
-            </div>
-
-            {/* Card 4 */}
-            <div className="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden group cursor-pointer reveal reveal-up reveal-delay-4 rounded-2xl shadow-xl border border-white/5 m-3 sm:m-4">
-              <img
-                src="/Everything For JB Detailing/530272377_1095695082689886_4531501916105269386_n.jpg"
                 alt="Ceramic coating application"
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
               />
@@ -364,6 +310,60 @@ export default function Home() {
               <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
                 <div className="bg-black/60 backdrop-blur-sm rounded-lg px-4 py-3">
                   <h3 className="text-base md:text-lg lg:text-xl font-extrabold tracking-wide">CERAMIC COATING</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 2 */}
+            <div className="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden group cursor-pointer reveal reveal-up reveal-delay-2 rounded-2xl shadow-xl border border-white/5 m-3 sm:m-4">
+              <img
+                src="/534549469_630052690156240_5900673815057107597_n.jpg"
+                alt="Interior detailing service"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              />
+              <span className="absolute top-4 left-4 z-10 bg-blue-600 text-white text-[10px] md:text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full shadow">
+                Popular
+              </span>
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
+              <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <div className="bg-black/60 backdrop-blur-sm rounded-lg px-4 py-3">
+                  <h3 className="text-base md:text-lg lg:text-xl font-extrabold tracking-wide">INTERIOR DETAILING</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 3 */}
+            <div className="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden group cursor-pointer reveal reveal-up reveal-delay-3 rounded-2xl shadow-xl border border-white/5 m-3 sm:m-4">
+              <img
+                src="/Everything For JB Detailing/528275995_792450083735589_1487331631030713673_n.jpg"
+                alt="Exterior detailing service"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              />
+              <span className="absolute top-4 left-4 z-10 bg-blue-600 text-white text-[10px] md:text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full shadow">
+                Popular
+              </span>
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
+              <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <div className="bg-black/60 backdrop-blur-sm rounded-lg px-4 py-3">
+                  <h3 className="text-base md:text-lg lg:text-xl font-extrabold tracking-wide">EXTERIOR DETAILING</h3>
+                </div>
+              </div>
+            </div>
+
+            {/* Card 4 */}
+            <div className="relative h-[240px] sm:h-[300px] md:h-[360px] overflow-hidden group cursor-pointer reveal reveal-up reveal-delay-4 rounded-2xl shadow-xl border border-white/5 m-3 sm:m-4">
+              <img
+                src="/Everything For JB Detailing/530272377_1095695082689886_4531501916105269386_n.jpg"
+                alt="Paint correction and touch up"
+                className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-[1.03]"
+              />
+              <span className="absolute top-4 left-4 z-10 bg-blue-600 text-white text-[10px] md:text-xs font-bold uppercase tracking-wide px-3 py-1 rounded-full shadow">
+                Popular
+              </span>
+              <div className="absolute inset-x-0 bottom-0 h-1/2 bg-gradient-to-t from-black/80 to-transparent pointer-events-none" />
+              <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                <div className="bg-black/60 backdrop-blur-sm rounded-lg px-4 py-3">
+                  <h3 className="text-base md:text-lg lg:text-xl font-extrabold tracking-wide">PAINT CORRECTION / TOUCH UP</h3>
                 </div>
               </div>
             </div>
@@ -689,7 +689,7 @@ export default function Home() {
                       </label>
                     ))}
                   </div>
-                </div>
+                  </div>
 
                 {/* Package Selection */}
                 <div className="mt-6">
