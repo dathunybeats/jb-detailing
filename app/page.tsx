@@ -678,15 +678,47 @@ export default function Home() {
                   ))}
                 </div>
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-                  <div>
-                    <label className="block text-white/70 text-sm mb-1">Did any packages catch your eye?</label>
-                    <input type="text" className="w-full bg-transparent border border-white/15 focus:border-white/30 rounded px-3 py-2 outline-none" placeholder="e.g. Standard Detailing Package" />
+                {/* Vehicle Size Selection */}
+                <div className="mt-6">
+                  <label className="block text-white/70 text-sm mb-3">Vehicle Size</label>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-3">
+                    {['Small Vehicle', 'Mid-Size Vehicle', 'Large Vehicle'].map((size) => (
+                      <label key={size} className="flex items-center gap-3 text-white/90 bg-white/5 border border-white/15 rounded p-3 cursor-pointer hover:bg-white/10 transition-colors">
+                        <input type="radio" name="vehicleSize" className="appearance-none w-4 h-4 rounded-full border border-white/30 checked:bg-blue-600 checked:border-blue-600" />
+                        <span>{size}</span>
+                      </label>
+                    ))}
                   </div>
-                  <div>
-                    <label className="block text-white/70 text-sm mb-1">Do you want any add ons?</label>
-                    <input type="text" className="w-full bg-transparent border border-white/15 focus:border-white/30 rounded px-3 py-2 outline-none" placeholder="e.g. Engine bay cleaning" />
+                </div>
+
+                {/* Package Selection */}
+                <div className="mt-6">
+                  <label className="block text-white/70 text-sm mb-3">Select a Package</label>
+                  <div className="space-y-3">
+                    {[
+                      { name: 'Standard Package', desc: 'Exterior spray wax, wheels & tires cleaned, full vacuuming', price: '$150-$215' },
+                      { name: 'Gold Package', desc: 'Standard + rain-repellent treatment, in-depth detailing', price: '$175-$240' },
+                      { name: 'Platinum Package', desc: 'Gold + hand wax/sealant, carpet shampooing', price: '$215-$275' },
+                      { name: 'Diamond Package', desc: 'Platinum + deep cleaning, steaming, leather conditioning', price: '$275-$325' },
+                      { name: 'Full Makeover Package', desc: 'Diamond + engine bay, enhancement polish, 1-year protection', price: '$375-$450' }
+                    ].map((pkg) => (
+                      <label key={pkg.name} className="flex items-start gap-3 text-white/90 bg-white/5 border border-white/15 rounded p-4 cursor-pointer hover:bg-white/10 transition-colors">
+                        <input type="radio" name="package" className="appearance-none w-4 h-4 rounded-full border border-white/30 checked:bg-blue-600 checked:border-blue-600 mt-1" />
+                        <div className="flex-1">
+                          <div className="flex justify-between items-start mb-1">
+                            <span className="font-semibold">{pkg.name}</span>
+                            <span className="text-blue-400 font-semibold">{pkg.price}</span>
+                          </div>
+                          <p className="text-white/70 text-sm">{pkg.desc}</p>
+                        </div>
+                      </label>
+                    ))}
                   </div>
+                </div>
+
+                <div className="mt-6">
+                  <label className="block text-white/70 text-sm mb-1">Special Requests</label>
+                  <input type="text" className="w-full bg-transparent border border-white/15 focus:border-white/30 rounded px-3 py-2 outline-none" placeholder="e.g. Extra attention to interior" />
                 </div>
 
                 <div className="mt-4">
@@ -704,12 +736,41 @@ export default function Home() {
             {/* Sidebar / Next steps */}
             <aside className="bg-[rgb(35,34,37)] rounded-2xl p-6 md:p-8 border border-white/10 shadow-xl order-1 lg:order-1 lg:sticky lg:top-6">
               <h3 className="text-2xl font-extrabold mb-4">What happens next?</h3>
-              <p className="text-white/80 mb-6">We’ll review your request and reach out to confirm the date and time. Pricing options are available for all services. Prefer to talk? Call or text any time.</p>
+              <p className="text-white/80 mb-6">We'll review your request and reach out to confirm the date and time. Pricing varies by vehicle size and package selected.</p>
+              
+              {/* Quick Pricing Overview */}
+              <div className="bg-white/5 rounded-lg p-4 mb-6">
+                <h4 className="text-lg font-bold text-blue-400 mb-3">Starting Prices</h4>
+                <div className="space-y-2 text-sm text-white/90">
+                  <div className="flex justify-between">
+                    <span>Standard Package:</span>
+                    <span className="text-blue-400">$150+</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Gold Package:</span>
+                    <span className="text-blue-400">$175+</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Platinum Package:</span>
+                    <span className="text-blue-400">$215+</span>
+                  </div>
+                  <div className="flex justify-between">
+                    <span>Diamond Package:</span>
+                    <span className="text-blue-400">$275+</span>
+                  </div>
+                  <div className="flex justify-between border-t border-white/20 pt-2">
+                    <span className="font-semibold">Full Makeover:</span>
+                    <span className="text-blue-400 font-semibold">$375+</span>
+                  </div>
+                </div>
+                <p className="text-xs text-white/60 mt-2">*Prices vary by vehicle size</p>
+              </div>
+
               <div className="space-y-3 text-white/90">
                 <p><span className="font-semibold">Service Area:</span> Tuscaloosa, AL and surrounding</p>
                 <p><span className="font-semibold">Phone:</span> <a className="text-blue-400 hover:underline" href="tel:+12058725994">+1 205-872-5994</a></p>
                 <p><span className="font-semibold">Hours:</span> Professional Service – By Appointment</p>
-                <p><span className="font-semibold">Services:</span> Detailing | Ceramic Coating | PPF | Paint Correction | Interior & Exterior</p>
+                <p><span className="font-semibold">Services:</span> Ceramic Coating | Interior & Exterior Detailing | Paint Correction</p>
               </div>
               <a href="tel:+12058725994" className="mt-6 inline-flex items-center justify-center w-full bg-white text-black font-semibold rounded-md py-3 hover:bg-white/90 transition-colors">CALL US NOW</a>
             </aside>
